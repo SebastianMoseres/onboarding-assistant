@@ -98,7 +98,7 @@ async def ask_question(request: QuestionRequest):
         Answer:
         """
         # Choose the Gemini model (ensure this model name is available/correct)
-        model = genai.GenerativeModel('gemini-2.0-flash-lite') # Or 'gemini-1.0-pro'
+        model = genai.GenerativeModel('models/gemini-pro-latest') # Or 'gemini-1.0-pro'
 
         ai_response = model.generate_content(prompt)
         ai_answer = ai_response.text.strip()
