@@ -4,11 +4,11 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from supabase import create_client, Client
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import google.generativeai as genai
 
 # Load environment variables from .env file (only affects local run)
-load_dotenv(dotenv_path='../.env')
+# load_dotenv(dotenv_path='../.env')
 
 # --- Environment Variables & Configuration ---
 SUPABASE_URL = os.getenv("SUPABASE_URL")
@@ -34,7 +34,7 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:8501",
-    "https://new-employee-assistant.streamlit.app", # Your deployed frontend URL
+    "https://new-employee-assistant.streamlit.app", # deployed frontend URL
 ]
 
 app.add_middleware(
@@ -98,7 +98,7 @@ async def ask_question(request: QuestionRequest):
         Answer:
         """
         # Choose the Gemini model (ensure this model name is available/correct)
-        model = genai.GenerativeModel('gemini-1.5-pro') # Or 'gemini-1.0-pro'
+        model = genai.GenerativeModel('gemini-pro') # Or 'gemini-1.0-pro'
 
         ai_response = model.generate_content(prompt)
         ai_answer = ai_response.text.strip()
@@ -158,5 +158,3 @@ async def update_context(request: ContextUpdateRequest):
     except Exception as e:
         print(f"ERROR (/context POST): Exception updating context: {e}")
         raise HTTPException(status_code=500, detail=f"Could not update context: {e}")
-
-# Note: Optional /history endpoint remains unchanged if you kept it.

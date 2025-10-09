@@ -1,0 +1,31 @@
+COMPANY_CONTEXT = """
+Welcome Aboard!
+
+We’re thrilled to have you join the team! Here’s everything you need to know to get started:
+
+Time Off & Vacation (PTO):
+You get 20 days of Paid Time Off (PTO) annually. PTO starts building from day one, and you’ll see it accrue monthly. If you’re planning a trip, please submit your request for time off 2 weeks in advance via the HR portal. You can carry over up to 5 unused days to the next year.
+
+Remote Work & Flexibility:
+We’re all about work-life balance! Remote work is available for most roles, but please check in with your manager to confirm eligibility. To ensure success while working remotely, please maintain a quiet, dedicated workspace and a reliable internet connection. Our core collaboration hours are 10 AM to 4 PM in your local time zone. Please ensure availability for team sync-ups during these hours.
+
+Tech Setup & IT Support:
+You’ll receive a company laptop as your primary tool to get started. If you need assistance, our IT team is here to help. Simply submit a ticket via the IT Helpdesk Portal or email support@company.com. VPN setup instructions and other helpful tech guides are available on the Company Intranet (link provided during onboarding).
+
+Our Mission & Values:
+Our core mission is to “revolutionize the tech industry through innovation, transparency, and collaboration.”
+We value:
+	•	Customer Obsession: We are always focused on solving our customers’ problems.
+	•	Bias for Action: We believe in making fast decisions and iterating quickly.
+	•	Teamwork: We succeed when we collaborate and support one another.
+
+Perks & Culture:
+We work hard and have fun! Enjoy free snacks and coffee in the office, a monthly remote work stipend, and regular team lunches. Keep an eye out for announcements about our monthly virtual game nights, Friday team socials, and occasional wellness events to help balance work and relaxation.
+
+Key Tools We Use:
+	•	Communication: Slack is our primary platform for all team communication and daily updates.
+	•	Project Management: We track most work in Jira and use Asana for individual task management.
+	•	Documentation: Our knowledge base and documentation are stored in Confluence.
+
+Remember: This AI assistant’s knowledge is based on this document. For specific personal questions or complex issues, please reach out to your manager or HR.
+"""
